@@ -13,8 +13,8 @@
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y) {
-    x <<- y
-    inv <<- NULL
+  x <<- y
+  inv <<- NULL
   }
   get <- function() x
   setinverse <- function(inverse) inv <<- inverse
@@ -25,10 +25,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## Write a short comment describing this function
 
-# The following function calculates the inverse of the matrix. It first checks if
-# the inverse has already been calculated. If so, it gets the inverse matrix from cache and skips the
-# computation. If not, it computes the inverse, sets the value in the cache via
-# setinverse function.
+# The following function calculates the inverse of the matrix. It first checks if the inverse has already been calculated. 
+# If so, it gets the inverse matrix from cache and skips the computation. 
+# If not, it computes the inverse, sets the value in the cache via setinverse function.
 
 # This function assumes that the matrix is always invertible.
 
